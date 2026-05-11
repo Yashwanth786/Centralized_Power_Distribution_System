@@ -733,7 +733,7 @@ The **Activity Logs** panel (toggled from header) shows all events with type-cod
 
 ## 11. Demo Video
 
-Watch the demo video here: [`media/demo_video.mp4`](media/demo_video.mp4)
+Watch the demo video here: [Demo Video](https://drive.google.com/file/d/1mhNnTaNkejmopCFQ-6PinY2lMFn2YFTQ/view?usp=sharing))
 
 **What the demo shows:**
 1. Student enters roll number → selects table → confirmation screen → sockets go live
