@@ -8,7 +8,7 @@
 
 <br>
 
-![System Overview](media/hardware/system_overview.jpg)
+![System Overview](media/hardware/system_overview.png)
 
 <br>
 
