@@ -20,7 +20,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 1. [Introduction & Overview](#1-introduction--overview)
 2. [Features](#2-features)
