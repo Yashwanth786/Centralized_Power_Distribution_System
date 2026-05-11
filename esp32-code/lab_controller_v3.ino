@@ -49,7 +49,7 @@
 #define TABLE_ID        "T-01"     // Change per ESP: T-01, T-02 … T-10
 
 // From Firebase Console → Project Settings → General → Web API Key
-#define FIREBASE_API_KEY  "AIzaSyAnQ02o76gdbtppvow-VptA11PoSBgWgtk"
+#define FIREBASE_API_KEY  "Your_API_Key"
 
 // From Firebase Console → Realtime Database → copy URL (ends in .firebaseio.com)
 #define DATABASE_URL  "https://iith-ee-lab-default-rtdb.asia-southeast1.firebasedatabase.app"
