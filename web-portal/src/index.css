@@ -1,0 +1,110 @@
+/* src/index.css */
+:root {
+  --orange: #e8511a;
+  --orange-dark: #c94010;
+  --orange-light: #ff6b35;
+  --orange-pale: #fff0eb;
+  --orange-muted: #fde0d4;
+  --bg: #f7f4f0;
+  --white: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --text-light: #9b9b9b;
+  --border: #e8e3dc;
+  --green: #16a34a;
+  --green-bg: #dcfce7;
+  --red: #dc2626;
+  --red-bg: #fee2e2;
+  --yellow: #d97706;
+  --yellow-bg: #fef3c7;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.14);
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: 'Sora', sans-serif; }
+
+button {
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select {
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(232,81,26,0.3);
+}
+.btn-primary:hover { background: var(--orange-dark); box-shadow: 0 6px 20px rgba(232,81,26,0.4); }
+.btn-primary:active { transform: scale(0.98); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+.btn-secondary {
+  background: var(--border);
+  color: var(--text-muted);
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  transition: background 0.2s;
+}
+.btn-secondary:hover { background: #ddd8d0; }
+
+.input-field {
+  width: 100%;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  background: var(--white);
+  color: var(--text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input-field:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 4px rgba(232,81,26,0.10);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade { animation: fadeIn 0.35s ease forwards; }
+.animate-slide { animation: slideUp 0.4s ease forwards; }
